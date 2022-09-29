@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How many digits?</title>
+</head>
+<body>
+    <h1>How many digits?</h1>
+    <script>
+        x = parseInt(prompt("Please enter a number between 0-9999 :"))
+        if (x >= 100)
+            if (x >= 1000)
+                document.write(`${x} has 4 digits`)
+            else
+                document.write(`${x} has 3 digits`)
+        else if (x >= 10)
+                document.write(`${x} has 2 digits`)
+            else
+                document.write(`${x} has 1 digits`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Income tax</title>
+</head>
+<body>
+    <h1>Income tax</h1>
+    <script>
+        bruto = parseInt(prompt("Please enter your wage :"))
+        
+        if (bruto > 74000)
+            if (bruto > 100000)
+                document.write(`tax is ${25700 + ((bruto - 100000) * 0.5)}`)
+            else
+                document.write(`tax is ${15300 + ((bruto - 74000) * 0.4)}`)
+        else if (bruto > 46000)
+                document.write(`tax is ${6900 + ((bruto - 46000) * 0.3)}`)
+            else if (bruto > 23000)
+                document.write(`tax is ${2300 + ((bruto - 23000) * 0.2)}`)
+                else
+                    document.write(`tax is ${bruto * 0.1}`)
+        
+    </script>
+</body>
+</html>
